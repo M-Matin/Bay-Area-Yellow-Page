@@ -1,0 +1,22 @@
+html,
+		 body {
+			 font-family: Arial, sans-serif;
+			 height: 100%;
+			 margin: 0;
+			 padding: 0;
+		 }
+
+		 #map {
+			 height: 100%;
+		 }
+		 .search {
+	width: 50%;
+	display: flex;
+}
+
+.search-box {
+	flex-grow: 1;
+	height: 50px;
+	font-size: 1em;
+	padding: 5px 20px;
+}
