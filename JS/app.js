@@ -11,7 +11,6 @@ var map;
          mapTypeControl: false
        });
 
-       // These are the real estate listings that will be shown to the user.
        // Normally we'd have these in a database instead.
        var locations = [
          {title: 'DVC', location: {lat: 37.971213, lng: -122.068966}},
