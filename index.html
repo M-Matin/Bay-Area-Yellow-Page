@@ -1,22 +1,31 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Bay Area Map</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>South Bay Neighborhood Map</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 	<div class="search" id="search">
-		<input class="search-box" id="search-box"/>
+		<input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+	</div>
+	<div class="app" id="app">
+		<div class="list" id="list">
+			<ul class="results" id="results" data-bind="foreach: filteredList">
+				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
+			</ul>
+		</div>
+		<div class="map" id="map">If you can read this, there has been an error loading Google Maps. Please Try Again.</div>
 	</div>
 
-		<div id="map"></div>
-	<!-- <script src='JS/knockout-3.4.0.js'></script> -->
-	<script src="JS/jquery.min.js"></script>
-	<script async defer
-	        src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyDM-Qk6_80kK0AOlXpwd8F0pWsDRZEjNes&v=3&callback=initMap">
-	    </script>
-	<script src="JS/app.js"></script>
 
+	<script src='JS/knockout-3.4.0.js'></script>
+	<script src='JS/jquery.min.js'></script>
+	<script src='JS/app.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=startApp&libraries=places" onerror="errorHandling()"></script>
 </body>
+
 </html>
