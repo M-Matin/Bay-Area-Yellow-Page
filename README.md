@@ -10,4 +10,9 @@ All the info of the places is coming from third party website (in my case Foursq
 This app is designed responsive for any size of device. You can try it by changing the size of your device.
 
 Click here to try it out:
-<https://github.com/M-Matin/Neighborhood-Map.git>
+<http://m-matin.github.io/Neighborhood-Map/>
+
+## For Download:
+`git clone https://github.com/M-Matin/Neighborhood-Map.git`
+
+Or click here: <https://github.com/M-Matin/Neighborhood-Map/archive/gh-pages.zip>
