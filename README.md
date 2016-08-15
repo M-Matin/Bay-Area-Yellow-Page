@@ -15,4 +15,12 @@ Click here to try it out:
 ## For Download:
 `git clone https://github.com/M-Matin/Neighborhood-Map.git`
 
-Or click here: <https://github.com/M-Matin/Neighborhood-Map/archive/gh-pages.zip>
+Or click here: <https://github.com/M-Matin/Neighborhood-Map/archive/master.zip>
+
+## Install with Bower.
+
+`$ bower install`
+
+## Technology used for this app:
+
+I used [KnockoutJS](http://knockoutjs.com) for data binding and push data to markers. [Google map](https://developers.google.com/maps/) used to display map on the browser. To show the information about each place on info window, I used [foursquare API](https://developer.foursquare.com).
