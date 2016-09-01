@@ -3,8 +3,8 @@
 var initialLocations = [{
         name: 'Benihana',
         lat: 37.968526,
-        long:  -122.052629
-     }, {
+        long: -122.052629
+    }, {
         name: 'The Lettuce Inn',
         lat: 37.980591,
         long: -122.022123
@@ -126,8 +126,76 @@ function AppViewModel() {
         center: {
             lat: 37.989128,
             lng: -122.043686
-
-        }
+        },
+        styles: [{
+            "featureType": "all",
+            "elementType": "labels",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#f3f4f4"
+            }]
+        }, {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry",
+            "stylers": [{
+                "weight": 0.9
+            }, {
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#83cead"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#ffffff"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "labels",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#fee379"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#fee379"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#7fc8ed"
+            }]
+        }]
     });
 
     // Foursquare API settings
